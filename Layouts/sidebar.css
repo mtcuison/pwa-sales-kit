@@ -1,0 +1,60 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: -100%;
+    bottom: -70%;
+    left: 0;
+    background-color:#E6E6E6;
+    z-index: 1;
+    visibility: hidden; 
+}
+#sideAcces{
+    cursor: pointer;
+    margin-left: -30px;
+}
+.bell-icon{
+    cursor: pointer;
+}
+.top-sidebar{
+    
+    background-color: #FF7F50;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.wave-images{
+    margin-top: 55px;
+    height: 150px;
+}
+p{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.sidebar-underline{
+    border-bottom: 2px solid gray;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+.agent-list{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr ;
+}
+i{
+
+  margin-left: 30px;
+  margin-right: 10px;
+}
+.home:hover
+{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.home:active{
+    color: orange;
+}

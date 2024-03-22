@@ -1,0 +1,87 @@
+.vehicle-container
+{
+    position: relative;
+   
+}
+nav{
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.right-nav{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.wave-img{
+    position: static;
+    top: 0;
+ 
+}
+.left-nav{
+    margin-left: 10px;
+}
+
+.motors-selection{
+    visibility:hidden;
+}
+.vehicle-img{
+    height: 200px;
+    width: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.image-text{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.vehicle-img:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.vehicle-img:active{
+    opacity: 0.6;
+}
+/* .container-selection,.motors-selection{
+    margin-top: 400px;
+} */
+.demo{
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: -50%;
+    z-index: 1;
+}
+@media only screen and (max-width: 475px) {
+    .vehicle-img{
+        height: 200px;
+        width: 400px;
+       
+    }
+}
+@media only screen and (max-width: 420px) {
+    .vehicle-img{
+ 
+        height: 180px;
+        width: 320px;
+       
+    }
+}
+@media only screen and (max-width: 375px) {
+    .vehicle-img{
+        height: 160px;
+        width: 300px;
+       
+    }
+}

@@ -1,0 +1,97 @@
+p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.txt{
+    margin-bottom: -20px;
+}
+.text-form{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    margin-top: 20px;
+    border-bottom: 2px solid black;
+}
+.forms-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    width: 350px;
+    border-radius: 10px;
+
+}
+
+.lname-container {
+    position: relative;
+}
+
+input {
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.last {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+.lname-input:focus+.last {
+    top: 10px;
+    left: 30px;
+    color: orange;
+    background-color: white;
+}
+
+.financier-form {
+    position: relative;
+    margin-top: 10px;
+    z-index: 0;
+
+}
+
+.input-label {
+    left: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15px;
+}
+
+.form-input:focus~.input-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.input-label{
+    top: -10px;
+    left: 10px;
+    color: orange;
+    background-color: white;
+
+}
+
+.form-input:focus {
+    border: 1px solid orange;
+}
+.btn{
+   margin-bottom: 40px;
+}
+button{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff8c00;
+}button:hover{
+    opacity: 0.9;
+}
+button:active{
+    opacity: 0.6;
+}

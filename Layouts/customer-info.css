@@ -1,0 +1,119 @@
+.sg-container{
+    display: flex;
+    flex-direction: row;
+}
+.gender-input{
+    display: flex;
+    flex-direction: row;
+    
+}
+.chk{
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: px;
+}
+
+.relation-select{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid gray;
+
+}
+.input-label{
+    left: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 15px;
+}
+.relation-select:focus~.input-label,
+.relation-select:not(:placeholder-shown).relation-select:not(:focus)~.input-label{
+    top: -12px;
+    color: gray;
+    background-color: white;
+
+}
+
+.password-input:focus{
+    border: 1px solid orange;
+}
+.financier-form{
+    margin-top: 15px;
+}
+.input-label{
+    width: 10px;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    margin-left: 50px;
+}
+.suffix-input{
+    width: 100px;
+}
+.gender-select{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.suffix-label{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+
+}
+.suffix-input:focus~.suffix-label,
+.suffix-input:not(:placeholder-shown).suffix-input:not(:focus)~.suffix-label{
+    top: -12px;
+    color: orange;
+    background-color: white;
+    width: fit-content;
+
+}
+.form-input:focus~.input-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.input-label{
+    top: -15px;
+    color: orange;
+    width:fit-content;
+    background-color: white;
+
+}
+.form-input:focus{
+    border-color: orange;
+}
+.gender-text{
+    margin-top: 35px;
+}
+.input-label{
+    width:max-content;
+}
+.gender-label{
+    position: absolute;
+    right: -60px;
+    top: -12px;
+}
+.btn-con{
+    border-radius: 5px;
+}
+.sticky-text{
+    position: sticky;
+    z-index: 1;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.form-inputs{
+    margin-top:20px;
+}
+.modal-btn{
+    background-color: #E6E6E6; 
+    width: 500px;
+}
+.modal-body{
+    border-radius: 50px;
+}

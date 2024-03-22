@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">  
+
+  <link rel="stylesheet" href="Layouts/dashboard-motors.css">
+  <link rel="stylesheet" href="Layouts/dashboad-car-motor.css">
+  <link rel="stylesheet" href="Layouts/sidebar.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
+  <title>Dashboard</title>
+</head>
+<body>
+  <nav>
+    <div class="left-nav">
+      <div id="sideAcces">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+     </div>
+    <div>
+      <div class="right-nav">
+        <div class="bell-icon">
+          <i onclick="window.location.pathname='transaction-history.html'" class="fas fa-bell fa-lg"></i></div>
+        </div>
+      </div>  
+  </nav>
+
+  <div class="body-content">
+    <div class="wave-img">
+      <img src="img/img_header_background_light.jpg" class="img-header img-fluid " alt="...">
+      <p>Select Category</p>
+    </div>
+
+
+    <div class="sidebar" id="sidebar">
+      <div class="top-sidebar">
+        <div>
+          <img class="wave-images" src="img/kay_wave.png" alt="">
+        </div>
+        <div>
+          <p>Guanzon Sales Kit</p>
+        </div>
+        <div>
+          <p>User ID:GA021003575</p>
+        </div>
+    </div>
+
+  <!-- sidebar -->
+  <div class="middle-sidebar">
+      <div>
+          <div class="sidebar-underline">
+              <div>
+                  <i class='fa fa-home fa-lg'>
+                  </i>
+              </div>
+              <div class="home" id="home">
+                  <p>HOME</p>
+              </div>
+              <div>
+                  <i class='fas fa-clone fa-lg'>
+                  </i>
+              </div>
+              <div>
+                  <p>Inquires</p>
+              </div>
+          </div>
+          <span style="color: gray;"> <p>Agent</p></span>
+          
+          <div class="agent-list">    
+              <div>
+                  <i class='fas fa-users fa-lg'>
+                  </i>
+              </div>
+              <div>
+                  <p>Agent List</p>
+              </div>
+          </div>
+         
+          <div class="sidebar-underline">
+       
+          </div>
+          <span style="color: gray;"> <p>Account</p></span>
+        <div class="agent-list">    
+              <div>
+                  <i class='fas fa-user-alt fa-lg'>
+                  </i>
+              </div>
+              <div>
+                  <p>Profile</p>
+                  
+                 
+              </div>
+              <div>
+                  <i class='fas fa-pen-square fa-lg'>
+                  </i>
+              </div>
+              <div>
+                  <p>User Perofrmance</p>
+              </div>
+              <div>
+                  <i class='fas fa-sign-in-alt fa-lg'>
+                  </i>
+              </div>
+              <div>
+                  <p>Singout</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+
+
+    <!-- dashboard selection cars and motors -->
+    <div class="container-selection" id="vehicle">
+      <div class="vehicle-container">
+        <img class="vehicle-img" src="img/img_category_auto.png" alt="">
+        <p class="image-text">Auto</p>
+      </div>
+      <div>
+        <div class="vehicle-container" id="motorcycle">
+          <img class="vehicle-img" src="img/img_category_mc.png" alt="" onclick="hideVehicle();
+          showMotor();">
+          <p class="image-text">Motorcycle</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- dashboard motors -->
+      <div class="motors-selection" id="motorSelection">
+        <div class="motor-container">
+          <img onclick="window.location.pathname='Suzuki-product.html' " class="motor-honda "
+            src="img/img_honda_header.jpg ">
+          <p class="img-text">Honda</p>
+        </div>
+        <div class="motor-container">
+          <img class="motor-suzuki " src="img/img_suzuki_header.jpg">
+          <p class="img-text">Suzuki</p>
+        </div>
+        <div class="motor-container">
+          <img class="motor-yamaha" src="img/img_yamaha_header.jpg">
+          <p class="img-text">Yamaha</p>
+        </div>
+        <div class="motor-container">
+          <img class="motor-kawasaki" src="img/img_mc_kawasaki.png">
+          <p class="img-text">Kawasaki</p>
+        </div>
+      </div>
+</div>
+
+<script>
+   const div = document.querySelector('#vehicle');
+   const motor = document.querySelector('#motorSelection');
+   const home = document.querySelector('#home');
+   const sidebar = document.querySelector('#sidebar');
+   const sideAcces = document.querySelector('#sideAcces');
+   function hideVehicle(){
+    div.style.display= 'none';
+   }
+   function showMotor(){
+    motor.style.visibility= 'visible';
+   }
+   home.addEventListener('click', ()=> {
+    sidebar.style.visibility='hidden';
+   })
+
+   sideAcces.addEventListener('click', ()=>{
+    sidebar.style.visibility='visible';
+   });
+</script>
+
+</body>
+</html>

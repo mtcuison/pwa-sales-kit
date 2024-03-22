@@ -1,0 +1,96 @@
+
+body{
+    background: #E6E6E6;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    
+    background-color: #FF7F50;
+    height: 300px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  
+    top: 0;
+    z-index: 1;
+}
+.nav-header{
+    display: flex;
+    flex-direction: row;
+    
+}
+.wave-image{
+    height: 180px;
+
+     
+}
+.nav-text{
+    margin-top: 30%;
+    position: absolute;
+    width: 250px;
+}
+.img {
+    position: absolute;
+    right: 20px;
+    top: 90px;
+    
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    border: none;
+    height: 40px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 10px;
+    width:fit-content;
+    height: fit-content;
+    
+}
+
+.nav-Customer-info{
+    position: absolute;
+    top:130px;
+    width: 170px;
+    left: 20px;
+
+} 
+
+.selected-unit{
+    display: flex;
+    flex-direction: row;
+    margin-top: 280px;
+    margin-left: 20px;
+}
+.product-text{
+  margin-top: 30px;
+}
+.form-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+    margin-top: 150px;
+}
+.select-form{
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+}
+.btnp{
+    border-radius: 5px;
+    width: 300px;
+    background-color: #ff8c00;
+}
